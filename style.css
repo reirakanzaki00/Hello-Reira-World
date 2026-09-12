@@ -2112,3 +2112,38 @@ body {
         margin: 0 3px;
     }
 }
+
+
+/* =========================================================
+   MOBILE FIX v2 — keep "Hello Reira World" on one line
+   ========================================================= */
+
+@media (max-width: 700px) {
+    .hero h2 {
+        white-space: nowrap;
+        overflow: visible;
+        font-size: clamp(22px, 6.8vw, 29px);
+        line-height: 1.25;
+        letter-spacing: -1px;
+        word-break: keep-all;
+        overflow-wrap: normal;
+    }
+
+    .hero h2::before,
+    .hero h2::after {
+        margin: 0 3px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero h2 {
+        font-size: 22px;
+        letter-spacing: -1px;
+    }
+
+    .hero h2::before,
+    .hero h2::after {
+        margin: 0 2px;
+    }
+}
