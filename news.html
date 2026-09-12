@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS | Reira Official Website</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo">Reira Official Website</div>
+
+    <button class="menu-button" type="button" aria-label="メニューを開く">
+        MENU
+    </button>
+
+    <nav class="menu-panel" aria-label="メインメニュー">
+        <a href="index.html">TOP</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="blog.html">BLOG</a>
+        <a href="news.html">NEWS</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="works.html">WORKS / ACTIVITIES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener">SNS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- NEWS HERO -->
+    <section class="news-hero">
+        <div class="section-label">Reira Official News</div>
+        <h1>NEWS</h1>
+        <p>
+            神﨑レイラの活動やオフィシャルサイトからのお知らせを
+            こちらでお届けします。
+        </p>
+    </section>
+
+
+    <!-- NEWS LIST -->
+    <section class="news-section">
+
+        <!--
+        ==================================================
+        新しいニュースを追加するときは、
+        下の「NEWS CARD」をコピーして使ってください。
+        日付・カテゴリー・タイトル・本文だけ変更すればOKです。
+        ==================================================
+        -->
+
+        <!-- NEWS CARD 01 -->
+        <article class="news-card">
+            <div class="news-meta">
+                <time datetime="2026-09-11">2026.09.11</time>
+                <span class="news-category">OFFICIAL</span>
+            </div>
+
+            <h2>ファンクラブサイト制作中！</h2>
+
+            <p>
+                オフィシャルファンクラブ「Hello Reira World」を
+                準備しています。
+            </p>
+        </article>
+
+
+        <!-- NEWS CARD 02 -->
+        <article class="news-card">
+            <div class="news-meta">
+                <time datetime="2026-09-11">2026.09.11</time>
+                <span class="news-category">WEBSITE</span>
+            </div>
+
+            <h2>Reira Official Website OPEN</h2>
+
+            <p>
+                神﨑レイラのオフィシャルサイトがオープンしました。
+                これから活動情報やニュースをお届けしていきます。
+            </p>
+        </article>
+
+
+        <!-- NEWS CARD 03 -->
+        <article class="news-card">
+            <div class="news-meta">
+                <time datetime="2026-09-06">2026.09.06</time>
+                <span class="news-category">ACTIVITY</span>
+            </div>
+
+            <h2>ライブ配信活動スタート</h2>
+
+            <p>
+                TikTokなどのSNSを中心に、ライブ配信活動をスタートしました。
+                これからたくさんの方に楽しんでもらえる活動をしていきます。
+            </p>
+        </article>
+
+
+        <!--
+        NEWS CARD TEMPLATE
+
+        <article class="news-card">
+            <div class="news-meta">
+                <time datetime="YYYY-MM-DD">YYYY.MM.DD</time>
+                <span class="news-category">CATEGORY</span>
+            </div>
+
+            <h2>ニュースタイトル</h2>
+
+            <p>
+                ニュース本文をここに入力します。
+            </p>
+        </article>
+        -->
+
+    </section>
+
+
+    <!-- BOTTOM NOTE -->
+    <section class="news-bottom">
+        <span class="bottom-line"></span>
+        <p>New information will be added here.</p>
+        <span class="bottom-line"></span>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© Reira Official Website</p>
+</footer>
+
+
+<script>
+    const menuButton = document.querySelector(".menu-button");
+    const menuPanel = document.querySelector(".menu-panel");
+
+    if (menuButton && menuPanel) {
+        menuButton.addEventListener("click", () => {
+            menuPanel.classList.toggle("open");
+        });
+    }
+</script>
+
+</body>
+</html>

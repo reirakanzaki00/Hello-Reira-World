@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | Reira Official Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">Reira Official Website</a>
+
+    <button class="menu-button" type="button" aria-label="メニューを開く">
+        MENU
+    </button>
+
+    <nav class="menu-panel">
+        <a href="index.html">TOP</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="blog.html">BLOG</a>
+        <a href="news.html">NEWS</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="works.html">WORKS / ACTIVITIES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener noreferrer">SNS</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="portfolio-hero">
+        <p class="eyebrow">Reira Official Portfolio</p>
+        <h1>PORTFOLIO</h1>
+        <p class="hero-text">
+            Reiraの活動・制作実績をご紹介します。<br>
+            Web・SNS・デジタルコンテンツなど、今後の活動をここに追加していきます。
+        </p>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="section-heading">
+            <p class="section-label">CURRENT PROJECTS</p>
+            <h2>現在のサイト</h2>
+            <p>現在公開しているWebサイトをご紹介します。</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!-- 新しい実績を追加するときは、このカードを複製してください -->
+            <a class="portfolio-card" href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener noreferrer">
+                <div class="card-visual sns-visual">
+                    <span>SNS</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-category">SNS LINK COLLECTION</p>
+                    <h3>Reira SNS Accounts</h3>
+                    <p>
+                        Reiraの各SNSアカウントをまとめたリンク集Webサイト。
+                        各SNSへスムーズにアクセスできます。
+                    </p>
+                    <span class="card-link">VIEW SITE <span>↗</span></span>
+                </div>
+            </a>
+
+            <a class="portfolio-card" href="index.html">
+                <div class="card-visual official-visual">
+                    <span>OFFICIAL</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-category">OFFICIAL WEBSITE</p>
+                    <h3>Reira Official Website</h3>
+                    <p>
+                        Reiraの公式サイト。
+                        プロフィール・ニュース・ブログ・活動情報などを掲載しています。
+                    </p>
+                    <span class="card-link">VIEW SITE <span>↗</span></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="portfolio-section coming-section">
+        <div class="section-heading">
+            <p class="section-label">COMING SOON</p>
+            <h2>これからの実績</h2>
+            <p>新しいWebサイト・制作物・活動実績を順次追加していきます。</p>
+        </div>
+
+        <div class="coming-card">
+            <span class="coming-mark">＋</span>
+            <div>
+                <p>NEW PROJECT</p>
+                <h3>Coming Soon</h3>
+                <span>新しいプロジェクトを準備中です。</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© Reira Official Website</p>
+</footer>
+
+<script>
+const menuButton = document.querySelector(".menu-button");
+const menuPanel = document.querySelector(".menu-panel");
+
+if (menuButton && menuPanel) {
+    menuButton.addEventListener("click", () => {
+        menuPanel.classList.toggle("open");
+    });
+}
+</script>
+
+</body>
+</html>

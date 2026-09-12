@@ -1,0 +1,435 @@
+/* =========================================================
+   Reira Official Website
+   PROFILE PAGE
+   ========================================================= */
+
+/* ページ全体 */
+.profile-page {
+    width: min(1080px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 96px 0 120px;
+}
+
+
+/* ---------------------------------------------------------
+   ページタイトル
+   --------------------------------------------------------- */
+
+.profile-intro {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.profile-intro-line {
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin: 0 auto 16px;
+    background: linear-gradient(90deg, #ff7bbd, #bd8cff);
+    border-radius: 999px;
+}
+
+.profile-eyebrow {
+    margin: 0 0 10px;
+    color: #9b78a5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+}
+
+.profile-intro h1 {
+    margin: 0;
+    color: #302b38;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+}
+
+.profile-lead {
+    margin: 16px 0 0;
+    color: #756779;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ---------------------------------------------------------
+   メインカード
+   「カードの中にカード」を避けて、
+   1枚の大きな面として構成
+   --------------------------------------------------------- */
+
+.profile-main-card {
+    position: relative;
+    overflow: hidden;
+    padding: 62px clamp(28px, 6vw, 76px) 72px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 32px;
+    background:
+        radial-gradient(circle at 92% 7%, rgba(255, 190, 224, 0.24), transparent 27%),
+        radial-gradient(circle at 4% 94%, rgba(194, 169, 255, 0.18), transparent 28%),
+        rgba(255, 255, 255, 0.66);
+    box-shadow:
+        0 24px 70px rgba(185, 115, 178, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.profile-main-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    width: 76%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 119, 185, 0.45),
+        rgba(185, 142, 255, 0.45),
+        transparent
+    );
+}
+
+
+/* ---------------------------------------------------------
+   名前
+   --------------------------------------------------------- */
+
+.profile-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 38px;
+}
+
+.profile-kicker {
+    margin: 0 0 12px;
+    color: #a477ad;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.32em;
+}
+
+.profile-heading h2 {
+    margin: 0;
+    color: #302b38;
+    font-size: clamp(42px, 6vw, 66px);
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+}
+
+.profile-name-en {
+    margin: 13px 0 0;
+    color: #987e9b;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+}
+
+.profile-mark {
+    flex: 0 0 auto;
+    color: #ee82bd;
+    font-size: 28px;
+    line-height: 1;
+    transform: translateY(-8px);
+}
+
+
+/* ---------------------------------------------------------
+   基本プロフィール
+   --------------------------------------------------------- */
+
+.profile-basic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(133, 105, 140, 0.14);
+    border-bottom: 1px solid rgba(133, 105, 140, 0.14);
+}
+
+.profile-item {
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 24px;
+}
+
+.profile-item + .profile-item {
+    border-left: 1px solid rgba(133, 105, 140, 0.14);
+}
+
+.profile-item span {
+    margin-bottom: 7px;
+    color: #8c788f;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.profile-item strong {
+    color: #e6539e;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* ---------------------------------------------------------
+   ABOUT
+   --------------------------------------------------------- */
+
+.profile-about {
+    padding: 66px 0 62px;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.section-label span {
+    color: #e85ca6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.section-label p {
+    margin: 0;
+    color: #8e7095;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+}
+
+.profile-about h3 {
+    max-width: 780px;
+    margin: 0;
+    color: #38303e;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.55;
+    letter-spacing: 0.015em;
+}
+
+.profile-about h3 em {
+    font-style: normal;
+    background: linear-gradient(90deg, #f05ba4, #a978e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.profile-copy {
+    max-width: 760px;
+    margin-top: 32px;
+}
+
+.profile-copy p {
+    margin: 0;
+    color: #685c6b;
+    font-size: 14px;
+    line-height: 2.15;
+}
+
+.profile-copy p + p {
+    margin-top: 16px;
+}
+
+
+/* ---------------------------------------------------------
+   ACTIVITIES
+   --------------------------------------------------------- */
+
+.profile-activities {
+    padding-top: 8px;
+}
+
+.activity-list {
+    border-top: 1px solid rgba(133, 105, 140, 0.14);
+}
+
+.activity-row {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 24px;
+    align-items: center;
+    min-height: 105px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(133, 105, 140, 0.14);
+    transition: padding 0.25s ease, background 0.25s ease;
+}
+
+.activity-row:hover {
+    padding-left: 8px;
+}
+
+.activity-number {
+    color: #e95ca6;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.activity-text h4 {
+    margin: 0;
+    color: #3a3340;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+
+.activity-text p {
+    margin: 7px 0 0;
+    color: #756879;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.activity-title-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.coming-soon {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 3px 10px;
+    border: 1px solid rgba(190, 120, 220, 0.25);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.48);
+    color: #a477b5;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.activity-coming-soon .activity-text h4 {
+    background: linear-gradient(90deg, #e95ca6, #b878e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+footer {
+    padding: 0 24px 34px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #9a829f;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+
+
+/* ---------------------------------------------------------
+   レスポンシブ
+   --------------------------------------------------------- */
+
+.sp-only {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .profile-page {
+        width: min(100% - 28px, 620px);
+        padding: 68px 0 80px;
+    }
+
+    .profile-intro {
+        margin-bottom: 28px;
+    }
+
+    .profile-lead {
+        font-size: 13px;
+    }
+
+    .profile-main-card {
+        padding: 40px 22px 48px;
+        border-radius: 24px;
+    }
+
+    .profile-heading {
+        align-items: flex-start;
+        padding-bottom: 30px;
+    }
+
+    .profile-heading h2 {
+        font-size: clamp(36px, 11vw, 54px);
+    }
+
+    .profile-mark {
+        font-size: 22px;
+    }
+
+    .profile-basic {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-item {
+        min-height: 70px;
+        padding: 14px 8px;
+    }
+
+    .profile-item + .profile-item {
+        border-left: 0;
+        border-top: 1px solid rgba(133, 105, 140, 0.14);
+    }
+
+    .profile-about {
+        padding: 48px 0 50px;
+    }
+
+    .profile-about h3 {
+        font-size: 27px;
+        line-height: 1.55;
+    }
+
+    .sp-only {
+        display: block;
+    }
+
+    .profile-copy {
+        margin-top: 26px;
+    }
+
+    .profile-copy p {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .activity-row {
+        grid-template-columns: 38px 1fr;
+        gap: 12px;
+        min-height: 92px;
+    }
+
+    .activity-text h4 {
+        font-size: 18px;
+    }
+
+    .activity-text p {
+        font-size: 11px;
+    }
+
+    .activity-title-line {
+        gap: 8px;
+    }
+
+    .coming-soon {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+}

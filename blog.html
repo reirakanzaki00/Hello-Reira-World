@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG | Reira Official Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Reira Official Website</div>
+
+    <button class="menu-button" type="button" aria-label="メニューを開く">
+        MENU
+    </button>
+
+    <div class="menu-panel">
+        <a href="index.html">TOP</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="blog.html">BLOG</a>
+        <a href="news.html">NEWS</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="works.html">WORKS / ACTIVITIES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener">SNS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</header>
+
+
+<main class="blog-page">
+
+    <!-- BLOG HEADER -->
+    <section class="blog-intro">
+        <span class="blog-line"></span>
+        <p class="blog-eyebrow">REIRA OFFICIAL BLOG</p>
+        <h1>BLOG</h1>
+        <p class="blog-lead">
+            Reiraの日常や活動について、<br>
+            いろいろなことを発信していきます。
+        </p>
+    </section>
+
+
+    <!--
+        =====================================================
+        BLOG ARTICLES
+
+        新しい記事を追加するときは、
+        下の article.blog-entry をコピーして使ってください。
+
+        変更する場所
+        ① class="blog-date" の日付
+        ② class="blog-category" のカテゴリー
+        ③ h2 のタイトル
+        ④ p class="blog-text" の本文
+
+        上に新しい記事を追加すると、最新記事が上に表示されます。
+        =====================================================
+    -->
+
+    <section class="blog-list">
+
+        <!-- ARTICLE 01 -->
+        <article class="blog-entry featured">
+            <div class="blog-entry-top">
+                <time class="blog-date" datetime="2026-09-06">2026.09.06</time>
+                <span class="blog-category">ACTIVITY</span>
+            </div>
+
+            <h2>神﨑 レイラとしての活動を<br class="desktop-only">スタートしました</h2>
+
+            <p class="blog-text">
+                2026年9月より活動を開始しました。
+                これからたくさんの方に楽しんでもらえる活動をしていきたいと思います。
+            </p>
+
+            <div class="blog-entry-footer">
+                <span>01</span>
+                <span class="read-label">Reira Official Blog</span>
+            </div>
+        </article>
+
+
+        <!-- ARTICLE 02 -->
+        <article class="blog-entry">
+            <div class="blog-entry-top">
+                <time class="blog-date" datetime="2026-09-11">2026.09.11</time>
+                <span class="blog-category">MESSAGE</span>
+            </div>
+
+            <h2>Hello Reira Worldへようこそ！</h2>
+
+            <p class="blog-text">
+                Reira Official Websiteをオープンしました。
+                このサイトでは、活動情報やブログなど、さまざまな情報をお届けしていきます。
+            </p>
+
+            <div class="blog-entry-footer">
+                <span>02</span>
+                <span class="read-label">Reira Official Blog</span>
+            </div>
+        </article>
+
+
+        <!--
+        =====================================================
+        次の記事を追加する場合のテンプレート
+
+        <article class="blog-entry">
+            <div class="blog-entry-top">
+                <time class="blog-date" datetime="2026-00-00">2026.00.00</time>
+                <span class="blog-category">CATEGORY</span>
+            </div>
+
+            <h2>ここにブログタイトル</h2>
+
+            <p class="blog-text">
+                ここに本文を書きます。
+            </p>
+
+            <div class="blog-entry-footer">
+                <span>03</span>
+                <span class="read-label">Reira Official Blog</span>
+            </div>
+        </article>
+        =====================================================
+        -->
+
+    </section>
+
+
+    <!-- COMING SOON -->
+    <section class="blog-coming">
+        <div class="blog-coming-icon">✦</div>
+        <p class="blog-coming-label">MORE STORIES</p>
+        <h2>これから少しずつ<br>更新していきます。</h2>
+        <p>
+            配信のこと、日常のこと、制作のことなど、<br>
+            Reiraのいろいろな一面をお届けします。
+        </p>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© Reira Official Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

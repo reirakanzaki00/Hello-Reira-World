@@ -1,0 +1,470 @@
+/* ==================================================
+   Reira Official Website
+   PORTFOLIO専用CSS
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: #352f3d;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Yu Gothic",
+        "Hiragino Kaku Gothic ProN",
+        sans-serif;
+
+    background:
+        radial-gradient(circle at 8% 20%, rgba(255, 184, 220, 0.48), transparent 30%),
+        radial-gradient(circle at 90% 48%, rgba(206, 177, 255, 0.38), transparent 32%),
+        linear-gradient(135deg, #fff7fc 0%, #f9efff 48%, #fff9fc 100%);
+
+    overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    min-height: 78px;
+    padding: 18px 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.78);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.logo {
+    color: #e85ca8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.menu-button {
+    width: 64px;
+    height: 64px;
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.58);
+    color: #342f3d;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+
+    cursor: pointer;
+    box-shadow:
+        0 12px 32px rgba(205, 117, 174, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.menu-button:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.menu-panel {
+    position: absolute;
+    top: 90px;
+    right: 42px;
+
+    width: 230px;
+    padding: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.92);
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow: 0 25px 70px rgba(153, 100, 145, 0.18);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px) scale(0.98);
+    transition: opacity 0.22s ease, visibility 0.22s ease, transform 0.22s ease;
+}
+
+.menu-panel.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.menu-panel a {
+    display: block;
+    padding: 11px 14px;
+
+    border-radius: 13px;
+
+    color: #403746;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+.menu-panel a:hover {
+    color: #e85ca8;
+    background: rgba(255, 220, 240, 0.5);
+    padding-left: 18px;
+}
+
+/* ---------- HERO ---------- */
+
+.portfolio-hero {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 76px 42px 112px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 16px;
+    color: #d65d9e;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.35em;
+}
+
+.portfolio-hero h1 {
+    margin: 0;
+
+    font-size: clamp(46px, 7vw, 76px);
+    line-height: 1.05;
+    letter-spacing: 0.04em;
+
+    background: linear-gradient(90deg, #e65b9f, #a879ec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text {
+    margin: 28px auto 0;
+    max-width: 650px;
+
+    color: #64596a;
+    font-size: 14px;
+    line-height: 2.0;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.portfolio-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 42px 110px;
+}
+
+.section-heading {
+    margin-bottom: 32px;
+}
+
+.section-label {
+    margin: 0 0 10px;
+    color: #df5da2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+}
+
+.section-heading h2 {
+    margin: 0 0 10px;
+    color: #39313e;
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+    color: #766b78;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* ---------- PORTFOLIO CARDS ---------- */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.portfolio-card {
+    display: block;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.92);
+    border-radius: 26px;
+
+    color: inherit;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 20px 55px rgba(153, 100, 145, 0.12);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 65px rgba(153, 100, 145, 0.18);
+}
+
+.card-visual {
+    height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-visual::before,
+.card-visual::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.card-visual::before {
+    width: 180px;
+    height: 180px;
+    top: -65px;
+    right: -30px;
+}
+
+.card-visual::after {
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
+    left: -25px;
+}
+
+.sns-visual {
+    background: linear-gradient(135deg, #ffb5d9, #c9a4f3);
+}
+
+.official-visual {
+    background: linear-gradient(135deg, #ffd1e6, #d5b9fa);
+}
+
+.card-visual span {
+    position: relative;
+    z-index: 1;
+
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+}
+
+.card-body {
+    padding: 26px 28px 28px;
+}
+
+.card-category {
+    margin: 0 0 9px;
+    color: #b36f99;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.card-body h3 {
+    margin: 0 0 12px;
+    color: #3c3542;
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+.card-body > p {
+    margin: 0;
+    color: #6f6472;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 22px;
+
+    color: #df5da2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.card-link span {
+    font-size: 15px;
+    line-height: 1;
+}
+
+/* ---------- COMING SOON ---------- */
+
+.coming-section {
+    padding-top: 4px;
+}
+
+.coming-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    padding: 26px 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.48);
+}
+
+.coming-mark {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    flex: 0 0 auto;
+
+    border-radius: 15px;
+    background: rgba(230, 178, 218, 0.3);
+
+    color: #d967a5;
+    font-size: 22px;
+}
+
+.coming-card p {
+    margin: 0 0 5px;
+    color: #bd719b;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+.coming-card h3 {
+    margin: 0 0 5px;
+    color: #403746;
+    font-size: 18px;
+}
+
+.coming-card span:last-child {
+    color: #7b707d;
+    font-size: 12px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    padding: 34px 20px 42px;
+    text-align: center;
+
+    background: rgba(53, 47, 61, 0.94);
+}
+
+.site-footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 9px;
+    letter-spacing: 0.22em;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        min-height: 70px;
+        padding: 14px 20px;
+    }
+
+    .logo {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+    .menu-button {
+        width: 56px;
+        height: 56px;
+    }
+
+    .menu-panel {
+        top: 80px;
+        right: 20px;
+        width: min(230px, calc(100vw - 40px));
+    }
+
+    .portfolio-hero {
+        padding: 62px 24px 78px;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-text {
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+    .portfolio-section {
+        padding: 0 20px 78px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card-visual {
+        height: 210px;
+    }
+
+    .card-body {
+        padding: 23px 22px 25px;
+    }
+
+    .coming-card {
+        padding: 22px;
+    }
+}

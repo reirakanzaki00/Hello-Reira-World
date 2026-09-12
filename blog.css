@@ -1,0 +1,333 @@
+/* =========================================================
+   Reira Official Website
+   BLOG PAGE
+   ========================================================= */
+
+.blog-page {
+    width: min(1080px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 96px 0 120px;
+}
+
+
+/* ---------------------------------------------------------
+   BLOG INTRO
+   --------------------------------------------------------- */
+
+.blog-intro {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.blog-line {
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin: 0 auto 16px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ff7bbd, #bd8cff);
+}
+
+.blog-eyebrow {
+    margin: 0 0 10px;
+    color: #9b78a5;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+}
+
+.blog-intro h1 {
+    margin: 0;
+    color: #302b38;
+    font-size: clamp(34px, 4vw, 50px);
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+}
+
+.blog-lead {
+    margin: 16px 0 0;
+    color: #756779;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* ---------------------------------------------------------
+   BLOG LIST
+   --------------------------------------------------------- */
+
+.blog-list {
+    display: grid;
+    gap: 22px;
+}
+
+
+/* ---------------------------------------------------------
+   BLOG CARD
+   --------------------------------------------------------- */
+
+.blog-entry {
+    position: relative;
+    overflow: hidden;
+    padding: 38px 42px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 28px;
+    background:
+        radial-gradient(circle at 96% 4%, rgba(255, 191, 225, 0.2), transparent 28%),
+        rgba(255, 255, 255, 0.68);
+    box-shadow:
+        0 18px 50px rgba(185, 115, 178, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.blog-entry:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 24px 58px rgba(185, 115, 178, 0.13),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+
+/* 最新記事だけ少し目立たせる */
+
+.blog-entry.featured {
+    padding: 48px 48px 32px;
+}
+
+.blog-entry.featured::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #f35fa8, #b57eea);
+}
+
+
+/* ---------------------------------------------------------
+   DATE / CATEGORY
+   --------------------------------------------------------- */
+
+.blog-entry-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog-date {
+    color: #a277a7;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.blog-category {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 3px 11px;
+    border: 1px solid rgba(190, 120, 220, 0.25);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.48);
+    color: #a477b5;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
+
+.blog-entry h2 {
+    max-width: 850px;
+    margin: 28px 0 0;
+    background: linear-gradient(90deg, #ed5aa4, #aa7be8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.015em;
+}
+
+
+/* ---------------------------------------------------------
+   BODY
+   --------------------------------------------------------- */
+
+.blog-text {
+    max-width: 790px;
+    margin: 24px 0 0;
+    color: #685d6b;
+    font-size: 14px;
+    line-height: 2.05;
+}
+
+
+/* ---------------------------------------------------------
+   CARD FOOTER
+   --------------------------------------------------------- */
+
+.blog-entry-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 34px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(133, 105, 140, 0.12);
+}
+
+.blog-entry-footer > span:first-child {
+    color: #e75ba4;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.read-label {
+    color: #a38ba5;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+
+/* ---------------------------------------------------------
+   MORE STORIES
+   --------------------------------------------------------- */
+
+.blog-coming {
+    margin-top: 54px;
+    padding: 52px 28px;
+    border-top: 1px solid rgba(133, 105, 140, 0.13);
+    border-bottom: 1px solid rgba(133, 105, 140, 0.13);
+    text-align: center;
+}
+
+.blog-coming-icon {
+    margin-bottom: 16px;
+    color: #ed82bd;
+    font-size: 23px;
+}
+
+.blog-coming-label {
+    margin: 0 0 12px;
+    color: #9b78a5;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+}
+
+.blog-coming h2 {
+    margin: 0;
+    color: #39313f;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.55;
+}
+
+.blog-coming > p:last-child {
+    margin: 16px 0 0;
+    color: #766878;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+footer {
+    padding: 0 24px 34px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #9a829f;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .blog-page {
+        width: min(100% - 28px, 620px);
+        padding: 68px 0 80px;
+    }
+
+    .blog-intro {
+        margin-bottom: 32px;
+    }
+
+    .blog-lead {
+        font-size: 13px;
+    }
+
+    .blog-list {
+        gap: 16px;
+    }
+
+    .blog-entry,
+    .blog-entry.featured {
+        padding: 30px 22px 24px;
+        border-radius: 23px;
+    }
+
+    .blog-entry.featured {
+        padding-top: 36px;
+    }
+
+    .blog-entry-top {
+        align-items: flex-start;
+    }
+
+    .blog-date {
+        font-size: 10px;
+    }
+
+    .blog-category {
+        font-size: 8px;
+        padding: 2px 8px;
+    }
+
+    .blog-entry h2 {
+        margin-top: 22px;
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .blog-text {
+        margin-top: 20px;
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .blog-entry-footer {
+        margin-top: 28px;
+    }
+
+    .blog-coming {
+        margin-top: 38px;
+        padding: 40px 18px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CONTACT | Reira Official Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">Reira Official Website</div>
+
+    <button class="menu-button">
+        MENU
+    </button>
+
+    <div class="menu-panel">
+        <a href="index.html">TOP</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="blog.html">BLOG</a>
+        <a href="news.html">NEWS</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="works.html">WORKS / ACTIVITIES</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener noreferrer">SNS</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="contact-page">
+
+        <p class="contact-subtitle">
+            Reira Official Contact
+        </p>
+
+        <h1>
+            CONTACT
+        </h1>
+
+        <p class="contact-description">
+            お仕事のご依頼・コラボレーション・<br>
+            その他のお問い合わせはこちらから。
+        </p>
+
+
+        <!-- お問い合わせ内容 -->
+
+        <section class="contact-section">
+
+            <p class="contact-label">
+                WORK / COLLABORATION
+            </p>
+
+            <h2>
+                お仕事・コラボレーション
+            </h2>
+
+            <p>
+                Web制作・動画制作・デザイン・
+                ファッション制作・出演・
+                コラボレーションなどのお問い合わせを受け付けています。
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT FORM -->
+
+        <section class="contact-form-section">
+
+            <p class="contact-label">
+                CONTACT FORM
+            </p>
+
+            <h2>
+                お問い合わせフォーム
+            </h2>
+
+            <p class="contact-form-description">
+                以下のフォームに必要事項をご入力ください。
+            </p>
+
+
+ <form
+    class="contact-form"
+    action="https://formspree.io/f/xeaqdbel"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="Reira Official Website お問い合わせ"
+    >
+
+    <!-- NAME -->
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        NAME
+                        <span>お名前</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="お名前を入力してください"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        EMAIL
+                        <span>メールアドレス</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="メールアドレスを入力してください"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- COMPANY -->
+
+                <div class="form-group">
+
+                    <label for="company">
+                        COMPANY / ORGANIZATION
+                        <span>会社名・団体名</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        placeholder="会社名・団体名（任意）"
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        CATEGORY
+                        <span>お問い合わせ種別</span>
+                    </label>
+
+                    <select
+                        id="category"
+                        name="category"
+                        required
+                    >
+
+                        <option value="">
+                            選択してください
+                        </option>
+
+                        <option value="web">
+                            Web制作
+                        </option>
+
+                        <option value="video">
+                            動画制作・編集
+                        </option>
+
+                        <option value="fashion">
+                            FASHION / ブランド制作
+                        </option>
+
+                        <option value="collaboration">
+                            コラボレーション
+                        </option>
+
+                        <option value="appearance">
+                            出演・配信関連
+                        </option>
+
+                        <option value="other">
+                            その他
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BUDGET -->
+
+                <div class="form-group">
+
+                    <label for="budget">
+                        BUDGET
+                        <span>ご予算</span>
+                    </label>
+
+                    <select
+                        id="budget"
+                        name="budget"
+                    >
+
+                        <option value="">
+                            選択してください
+                        </option>
+
+                        <option value="under-50000">
+                            〜5万円
+                        </option>
+
+                        <option value="50000-100000">
+                            5万円〜10万円
+                        </option>
+
+                        <option value="100000-300000">
+                            10万円〜30万円
+                        </option>
+
+                        <option value="300000-over">
+                            30万円〜
+                        </option>
+
+                        <option value="consult">
+                            要相談
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        MESSAGE
+                        <span>お問い合わせ内容</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="8"
+                        placeholder="ご依頼内容・ご相談内容などをご入力ください"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- PRIVACY -->
+
+                <div class="form-agreement">
+
+                    <label>
+
+                      <input
+    type="checkbox"
+    name="agreement"
+    value="yes"
+    required
+>
+
+                        <span>
+                            入力内容を確認しました。
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- SEND -->
+
+                <button
+                    type="submit"
+                    class="contact-submit-button"
+                >
+                    SEND MESSAGE
+                </button>
+
+
+                <p class="contact-form-note">
+                    ※お問い合わせ内容を確認のうえ、送信してください。
+                </p>
+
+            </form>
+
+        </section>
+
+
+        <!-- BACK -->
+
+        <div class="contact-back">
+
+            <a href="works.html">
+                ← WORKS / ACTIVITIES
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © Reira Official Website
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
