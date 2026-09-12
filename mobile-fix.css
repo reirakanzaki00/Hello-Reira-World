@@ -1,0 +1,113 @@
+/* =========================================================
+   MOBILE FIX — prevent horizontal overflow
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    max-width: 100%;
+}
+
+.hero,
+.hero-content,
+.hero h2,
+.hero-subtitle,
+.hero-description {
+    min-width: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        width: 100%;
+        padding: 28px 14px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 42px 20px;
+        overflow: hidden;
+    }
+
+    .hero h2 {
+        width: 100%;
+        max-width: 100%;
+
+        /* Do not force the English title onto one line. */
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
+
+        font-size: clamp(27px, 8.5vw, 38px);
+        line-height: 1.18;
+        letter-spacing: -1.2px;
+
+        /* Keep the heart decorations from making the title wider
+           than the screen. */
+        display: block;
+    }
+
+    .hero h2::before,
+    .hero h2::after {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .hero-subtitle {
+        width: 100%;
+        max-width: 100%;
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .menu-button {
+        flex-shrink: 0;
+    }
+
+    section,
+    article {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+
+    .hero {
+        padding: 22px 11px;
+    }
+
+    .hero-content {
+        padding: 34px 16px;
+        border-radius: 26px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+        letter-spacing: -0.8px;
+    }
+
+    .hero h2::before,
+    .hero h2::after {
+        margin: 0 3px;
+    }
+}
