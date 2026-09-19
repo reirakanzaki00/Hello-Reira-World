@@ -1,158 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG | Reira Official Website</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="神﨑レイラ Blog｜活動・制作・日々の発信">
+<title>BLOG | Reira Official Website</title>
+<link rel="stylesheet" href="blog.css">
 </head>
-
 <body>
-
-<header>
-    <div class="logo">Reira Official Website</div>
-
-    <button class="menu-button" type="button" aria-label="メニューを開く">
-        MENU
-    </button>
-
-    <div class="menu-panel">
-        <a href="index.html">TOP</a>
-        <a href="profile.html">PROFILE</a>
-        <a href="blog.html">BLOG</a>
-        <a href="news.html">NEWS</a>
-        <a href="schedule.html">SCHEDULE</a>
-        <a href="works.html">WORKS / ACTIVITIES</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="https://reirakanzaki00.github.io/Reira-link/" target="_blank" rel="noopener">SNS</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
+<header class="site-header">
+<a href="index.html" class="brand"><span class="brand-main">REIRA</span><span class="brand-sub">KANZAKI REIRA / OFFICIAL</span></a>
+<button class="menu-button" type="button" aria-label="メニュー" aria-expanded="false"><span></span><span></span><small>MENU</small></button>
+<nav class="menu-panel">
+<a href="index.html"><b>01</b>TOP</a><a href="profile.html"><b>02</b>PROFILE</a><a href="blog.html"><b>03</b>BLOG</a><a href="news.html"><b>04</b>NEWS</a><a href="schedule.html"><b>05</b>SCHEDULE</a><a href="works.html"><b>06</b>WORKS / ACTIVITIES</a><a href="portfolio.html"><b>07</b>PORTFOLIO</a><a href="sns.html"><b>08</b>SNS</a><a href="contact.html"><b>09</b>CONTACT</a>
+</nav>
 </header>
 
+<main>
+<section class="blog-hero">
+<div><p class="eyebrow"><span></span>03 / BLOG</p><h1>BLOG</h1><p>活動のこと、制作のこと、日々考えていること。</p></div>
+<div class="hero-count"><strong>JOURNAL</strong><span>REIRA'S NOTE</span></div>
+</section>
 
-<main class="blog-page">
+<section class="featured">
+<div class="section-label"><span>FEATURED</span><i></i></div>
+<article class="featured-card">
+<div class="featured-number">01</div>
+<div class="featured-content">
+<p class="meta">2026.09.11　/　START</p>
+<h2>オフィシャルサイトを<br><em>オープンしました。</em></h2>
+<p class="summary">ライブ配信活動を中心に、これからの活動や制作について発信していくためのオフィシャルサイトをスタートしました。</p>
+<a href="#" class="read">READ MORE <span>↗</span></a>
+</div>
+<div class="featured-mark">R</div>
+</article>
+</section>
 
-    <!-- BLOG HEADER -->
-    <section class="blog-intro">
-        <span class="blog-line"></span>
-        <p class="blog-eyebrow">REIRA OFFICIAL BLOG</p>
-        <h1>BLOG</h1>
-        <p class="blog-lead">
-            Reiraの日常や活動について、<br>
-            いろいろなことを発信していきます。
-        </p>
-    </section>
+<section class="articles">
+<div class="section-head"><div><p>JOURNAL</p><h2>RECENT POSTS</h2></div><span>日々の活動記録</span></div>
+<div class="post-list">
+<article class="post"><div class="post-date"><strong>09</strong><span>SEP / 2026</span></div><div class="post-body"><span class="tag">ACTIVITY</span><h3>CW内での活動をスタート。</h3><p>様々な活動に励みます。</p></div><span class="post-arrow">↗</span></article>
+<article class="post"><div class="post-date"><strong>06</strong><span>SEP / 2026</span></div><div class="post-body"><span class="tag">LIVE</span><h3>活動スタート。</h3><p>2026年9月6日から活動を開始しました。</p></div><span class="post-arrow">↗</span></article>
+<article class="post"><div class="post-date"><strong>—</strong><span>COMING</span></div><div class="post-body"><span class="tag">CREATIVE</span><h3>制作についての記録</h3><p>Webやデジタルコンテンツの制作について発信予定です。</p></div><span class="post-arrow">↗</span></article>
+</div>
+</section>
 
-
-    <!--
-        =====================================================
-        BLOG ARTICLES
-
-        新しい記事を追加するときは、
-        下の article.blog-entry をコピーして使ってください。
-
-        変更する場所
-        ① class="blog-date" の日付
-        ② class="blog-category" のカテゴリー
-        ③ h2 のタイトル
-        ④ p class="blog-text" の本文
-
-        上に新しい記事を追加すると、最新記事が上に表示されます。
-        =====================================================
-    -->
-
-    <section class="blog-list">
-
-        <!-- ARTICLE 01 -->
-        <article class="blog-entry featured">
-            <div class="blog-entry-top">
-                <time class="blog-date" datetime="2026-09-06">2026.09.06</time>
-                <span class="blog-category">ACTIVITY</span>
-            </div>
-
-            <h2>神﨑 レイラとしての活動を<br class="desktop-only">スタートしました</h2>
-
-            <p class="blog-text">
-                2026年9月より活動を開始しました。
-                これからたくさんの方に楽しんでもらえる活動をしていきたいと思います。
-            </p>
-
-            <div class="blog-entry-footer">
-                <span>01</span>
-                <span class="read-label">Reira Official Blog</span>
-            </div>
-        </article>
-
-
-        <!-- ARTICLE 02 -->
-        <article class="blog-entry">
-            <div class="blog-entry-top">
-                <time class="blog-date" datetime="2026-09-11">2026.09.11</time>
-                <span class="blog-category">MESSAGE</span>
-            </div>
-
-            <h2>Hello Reira Worldへようこそ！</h2>
-
-            <p class="blog-text">
-                Reira Official Websiteをオープンしました。
-                このサイトでは、活動情報やブログなど、さまざまな情報をお届けしていきます。
-            </p>
-
-            <div class="blog-entry-footer">
-                <span>02</span>
-                <span class="read-label">Reira Official Blog</span>
-            </div>
-        </article>
-
-
-        <!--
-        =====================================================
-        次の記事を追加する場合のテンプレート
-
-        <article class="blog-entry">
-            <div class="blog-entry-top">
-                <time class="blog-date" datetime="2026-00-00">2026.00.00</time>
-                <span class="blog-category">CATEGORY</span>
-            </div>
-
-            <h2>ここにブログタイトル</h2>
-
-            <p class="blog-text">
-                ここに本文を書きます。
-            </p>
-
-            <div class="blog-entry-footer">
-                <span>03</span>
-                <span class="read-label">Reira Official Blog</span>
-            </div>
-        </article>
-        =====================================================
-        -->
-
-    </section>
-
-
-    <!-- COMING SOON -->
-    <section class="blog-coming">
-        <div class="blog-coming-icon">✦</div>
-        <p class="blog-coming-label">MORE STORIES</p>
-        <h2>これから少しずつ<br>更新していきます。</h2>
-        <p>
-            配信のこと、日常のこと、制作のことなど、<br>
-            Reiraのいろいろな一面をお届けします。
-        </p>
-    </section>
-
+<section class="blog-message">
+<p class="eyebrow"><span></span> KEEP CREATING</p>
+<h2>発信する。<br><em>つくる。</em></h2>
+<p>活動の裏側や制作の記録も、少しずつここに残していきます。</p>
+</section>
 </main>
 
+<footer><div><strong>REIRA</strong><span>Kanzaki Reira / Official Website</span></div><small>© Reira Official Website</small></footer>
 
-<footer>
-    <p>© Reira Official Website</p>
-</footer>
-
-<script src="script.js"></script>
-
+<script>
+document.addEventListener("DOMContentLoaded",()=>{const b=document.querySelector(".menu-button"),p=document.querySelector(".menu-panel");b.addEventListener("click",e=>{e.stopPropagation();const o=p.classList.toggle("open");b.setAttribute("aria-expanded",o)});p.addEventListener("click",e=>e.stopPropagation());document.addEventListener("click",()=>{p.classList.remove("open");b.setAttribute("aria-expanded","false")})});
+</script>
 </body>
 </html>

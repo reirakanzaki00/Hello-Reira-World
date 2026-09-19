@@ -1,12 +1,1 @@
-const menuButton = document.querySelector(".menu-button");
-const menuPanel = document.querySelector(".menu-panel");
-
-if (menuButton && menuPanel) {
-
-    menuButton.addEventListener("click", () => {
-
-        menuPanel.classList.toggle("open");
-
-    });
-
-}
+document.addEventListener("DOMContentLoaded",()=>{const b=document.querySelector(".menu-button"),p=document.querySelector(".menu-panel");if(!b||!p)return;const close=()=>{p.classList.remove("open");b.setAttribute("aria-expanded","false")};b.addEventListener("click",e=>{e.stopPropagation();const o=p.classList.toggle("open");b.setAttribute("aria-expanded",String(o))});p.addEventListener("click",e=>{if(e.target.closest("a"))close()});document.addEventListener("click",e=>{if(!e.target.closest(".site-header"))close()});document.addEventListener("keydown",e=>{if(e.key==="Escape")close()})});
